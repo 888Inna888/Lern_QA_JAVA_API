@@ -1,3 +1,5 @@
+package Ex3HWT;
+
 import org.junit.jupiter.api.Test;
 
 public class Ex3HWT {
