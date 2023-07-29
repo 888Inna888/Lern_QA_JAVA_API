@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Ex10text {
     @ParameterizedTest
-    @ValueSource(strings = {"text1", "test15_89012345", "text123456789101112fghghfg"})
+    @ValueSource(strings = {"text1", "test15_89012345", "text123456789101112fghgfg"})
     public void testText(String name){
         Map<String, String> queryParams = new HashMap<>();
 
