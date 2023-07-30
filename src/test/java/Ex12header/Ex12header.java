@@ -13,19 +13,16 @@ public class Ex12header {
     @Test
     public void testHeader(){
 
-        Response responseresponseHeaders = RestAssured
+        Response responseHeaders = RestAssured
                 .given()
                 .get("https://playground.learnqa.ru/api/homework_header");
 
         System.out.println("\nHeaders:");
-        Headers responseHeader = responseresponseHeaders.getHeaders();
+        Headers responseHeader = responseHeaders.getHeaders();
         System.out.println(responseHeader);
 
-        Map<String, String> cookies = responseresponseHeaders.getCookies();
-        Headers headers = responseresponseHeaders.getHeaders();
-
+        Headers headers = responseHeaders.getHeaders();
         assertTrue(headers.hasHeaderWithName("x-secret-homework-header"), "Response doesn't have 'x-secret-homework-header' Header");
-
 
     }
 }
