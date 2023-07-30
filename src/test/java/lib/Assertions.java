@@ -12,5 +12,6 @@ public class Assertions {
         int value = Response.jsonPath().getInt(name);
         assertEquals(expectedValue, value, "JSON value is not equal to expected value");
 
+
     }
 }

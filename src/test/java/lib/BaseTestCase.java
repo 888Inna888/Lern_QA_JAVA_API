@@ -26,5 +26,6 @@ public class BaseTestCase {
     protected int getIntFromJson(Response Response, String name) {
         Response.then().assertThat().body("$",hasKey(name));
         return Response.jsonPath().getInt(name);
+
     }
 }
