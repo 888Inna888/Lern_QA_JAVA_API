@@ -35,6 +35,8 @@ public class Ex11cookie {
 
         assertTrue(headers.hasHeaderWithName("Set-Cookie"), "Response doesn't have 'Set-Cookie' Header");
         assertTrue(cookies.containsKey("HomeWork"), "Response doesn't have 'HomeWork' cookie");
+        assertTrue(cookies.containsValue("hw_value"), "The HomeWork is not hw_value");
+
 
     }
 }
