@@ -37,6 +37,5 @@ public class Ex11cookie {
         assertTrue(cookies.containsKey("HomeWork"), "Response doesn't have 'HomeWork' cookie");
         assertTrue(cookies.containsValue("hw_value"), "The HomeWork is not hw_value");
 
-
     }
 }
