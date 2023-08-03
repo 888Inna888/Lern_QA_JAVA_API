@@ -14,8 +14,6 @@ import lib.Assertions;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class UserAuthTest extends BaseTestCase {
@@ -51,15 +49,6 @@ public class UserAuthTest extends BaseTestCase {
                 .andReturn();
 
         Assertions.assertJsonByName(responseCheckAuth, "user_id", this.userIdOnAuth);
-
-        //int userIdOnCheck = responseCheckAuth.getInt("user_id");
-        //assertTrue(userIdOnCheck > 0, "Unexpected user_id " + userIdOnCheck);
-
-        //assertEquals(
-        //        userIdOnAuth,
-        //        userIdOnCheck,
-       //         "User ID from auth request is not equal to user_id from check request"
-        //);
 
     }
 
